@@ -1,0 +1,22 @@
+1. 在shell 中执行以下命令
+wget -P /root/test "http://www.baidu.com/index.html"  
+
+会把 index.html 文件保存到 "/root/test" 目录下. 
+
+2. 执行
+wget -O "baidu.html" "http://www.baidu.com/index.html"  
+会把 index.hmtl 保存到当前目录, 命令为 "baidu.html".
+
+3. 执行
+wget -P /root/test -O "baidu.html" "http://www.baidu.com/index.html"  
+的结果和 2 相同, 并不会保存到 "/root/test" 目录下. 
+
+4、断点下载
+
+使用wget -c完成未完成的下载
+
+下载到一半需要停下来干别的事情，用^c就可以停顿住。
+
+回来后，继续下载可以加一个-c参数。
+
+注意：如果不加入-c，那么下载的文件会多出一个.1的后缀。
