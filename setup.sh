@@ -22,12 +22,7 @@ cd ~/ubuntuSetup/dash-to-dock
 make 
 make install
 
-
-#install tool
-apt-get install curl -y
-apt-get install gdebi -y
-
-
+# install gnome theme
 sudo add-apt-repository ppa:noobslab/themes -y
 sudo apt-get update -y
 sudo apt-get install arc-theme -y
@@ -37,37 +32,39 @@ sudo apt-get update -y
 sudo apt-get install flat-remix-icons -y
 
 
-#nodejs and npm
+#install tool
+apt-get install curl -y
+apt-get install gdebi -y
+
+# install nodejs and npm
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt-get install -y nodejs
 sudo apt-get install -y build-essential
 
 #install markdown editor tepora
-# optional, but recommended
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA300B7755AFCFAE
-# add Typora's repository
-sudo add-apt-repository 'deb http://typora.io linux/'
-sudo apt-get update
-# install typora
-sudo apt-get install typora
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA300B7755AFCFAE -y
+sudo add-apt-repository 'deb http://typora.io linux/' -y
+sudo apt-get update -y
+sudo apt-get install typora -y
 
-#java 
-#better download java jdk
-sudo echo "export JAVA_HOME=/home/orange/Documents/Configuration/jdk1.8.0_151">> /etc/profile
-sudo echo "export JRE_HOME=\${JAVA_HOME}/jre">> /etc/profile
-sudo echo "export CLASSPATH=.:\${JAVA_HOME}/lib:\${JRE_HOME}/lib">> /etc/profile
-sudo echo "export PATH=\${JAVA_HOME}/bin:\$PATH">> /etc/profile
-source /etc/profile
 
 #######################################################################
-#INSTALL SOFTWARE                                                     #
-# ANDROID STUDIO,INTELLJI, GENYMOTION, SKYPE, VSCODE, OXS ARC THEME,  #
+# INSTALL SOFTWARE                                                    #
+# ANDROID STUDIO                                                      #
+# INTELLJI                                                            #
+# GENYMOTION                                                          #
+# SKYPE                                                               #
+# VSCODE                                                              #
+# OXS ARC THEME                                                       #
 ####################################################################### 
-#download jdk
+
+
+mkdir /SW
+
+# install oracle jdk
 echo "ready configure oracle java jdk"
 cd ~/ubuntuSetup/
 sudo wget --no-check-certificate -c --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u151-b12/e758a0de34e24606bca991d704f6dcbf/jdk-8u151-linux-x64.tar.gz
-
 tar -xvzf jdk-8u151-linux-x64.tar.gz
 sudo mv jdk1.8.0_151/ /SW/jdk1.8.0_151
 
@@ -79,8 +76,8 @@ source /etc/profile
 echo "finish configure oracle java jdk"
 
 
-# install skype
-cd ~/Downloads
+# install software
+cd ~/ubuntuSetup/Sofrware
 
 sudo dpkg -i skypeforlinux-64.deb
 sudo dpkg -i code_1.17.2-1508162334_amd64.deb
@@ -98,7 +95,7 @@ sudo mv android-studio/ /SW/android-studio
 cd /SW/android-studio/bin
 ./studio.sh 
 
-#install intellji
+#install intellij
 tar -xvzf ideaIU-2017.2.5.tar.gz
 sudo mv idea-IU-172.4343.14 /SW/idea-IU-172.4343.14
 cd /SW//SW/idea-IU-172.4343.14/bin
