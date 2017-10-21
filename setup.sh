@@ -50,12 +50,12 @@ sudo apt-get install typora -y
 
 #######################################################################
 # INSTALL SOFTWARE                                                    #
-# ANDROID STUDIO                                                      #
-# INTELLJI                                                            #
-# GENYMOTION                                                          #
-# SKYPE                                                               #
 # VSCODE                                                              #
 # OXS ARC THEME                                                       #
+# GENYMOTION                                                          #
+# SKYPE                                                               #
+# ANDROID STUDIO                                                      #
+# INTELLJI                                                            #
 ####################################################################### 
 
 
@@ -90,6 +90,8 @@ chmod +x genymotion-2.10.0-linux_x64.bin
 sudo ./genymotion-2.10.0-linux_x64.bin
 
 #install android studio
+cd ~/Downloads
+sudo wget https://dl.google.com/dl/android/studio/ide-zips/2.3.3.0/android-studio-ide-162.4069837-linux.zip
 tar -xvzf android-studio-ide-162.4069837-linux.zip
 sudo mv android-studio/ /SW/android-studio
 cd /SW/android-studio/bin
