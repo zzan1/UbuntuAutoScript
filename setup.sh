@@ -1,6 +1,14 @@
 #!/bin/bash  
 
-echo "Start to configuration"
+echo ""
+echo "#######################################################################"
+echo "#                          Start to configurate!                      #"
+echo "#                                 V 1.0.0                             #"
+echo "#######################################################################"
+echo ""
+
+
+echo ""
 swDir="/SW"
 #downloadFolderName="ubuntuSW"
 
@@ -24,16 +32,6 @@ sudo apt-get install -y vim
 echo "install unzip"
 sudo apt-get install unzip -y
 
-# install dash to dock
-#mkdir ~/ubuntuSetup
-#cd ~/ubuntuSetup/
-echo "install dash to dock plug in"
-cd ~/Downloads
-git clone https://github.com/micheleg/dash-to-dock.git
-cd dash-to-dock
-make 
-make install
-
 #install gnome desktop
 echo "install gnome shell and tweak tool"
 sudo apt-get install gnome-shell -y
@@ -52,6 +50,13 @@ sudo add-apt-repository ppa:noobslab/icons -y
 sudo apt-get update -y
 sudo apt-get install flat-remix-icons -y
 
+# install dash to dock
+echo "install dash to dock plug in"
+cd ~/Downloads
+git clone https://github.com/micheleg/dash-to-dock.git
+cd dash-to-dock
+make 
+make install
 
 # install nodejs and npm
 echo "configure nodejs and npm environment"
@@ -153,6 +158,11 @@ mv idea-IU-172.4343.14 ${swDir}/idea-IU-172.4343.14
 cd ${swDir}/idea-IU-172.4343.14/bin
 ./idea.sh 
 
+echo ""
+echo "#######################################################################"
+echo "#                          FINISH!!!!!!!!!                            #"
+echo "#######################################################################"
+echo ""
 
 
 
