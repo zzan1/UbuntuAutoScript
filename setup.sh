@@ -11,10 +11,10 @@ osxArcCollectionThemeLink=""
 googleChromeLink=""
 
 swDir="/sw"
-downloadFolder="~/Downloads/ubuntuSW"
+downloadFolderName="ubuntuSW"
 
 sudo mkdir ${swDir}
-sudo mkdir ${downloadFolder}
+sudo mkdir ~/Downloads/${downloadFolder}
 
 # update system
 echo "update system"
@@ -35,9 +35,9 @@ sudo apt-get install -y vim
 #mkdir ~/ubuntuSetup
 #cd ~/ubuntuSetup/
 echo "install dash to dock plug in"
-cd ${downloadFolder}
+cd ~/Downloads/${downloadFolder}
 git clone https://github.com/micheleg/dash-to-dock.git
-cd ${downloadFolder}/dash-to-dock
+cd dash-to-dock
 make 
 make install
 
@@ -78,7 +78,7 @@ sudo apt-get install typora -y
 # install oracle jdk
 echo "ready configure oracle java jdk"
 jdkContainer="jdk.tar.gz"
-cd ${downloadFolder} 
+cd ~/Downloads/${downloadFolder} 
 sudo wget -o ${jdkContainer} --no-check-certificate -c --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u151-b12/e758a0de34e24606bca991d704f6dcbf/jdk-8u151-linux-x64.tar.gz
 tar -xvzf ${jdkContainer}
 sudo mv  ${downloadFolder} /${swDir}/${jdkContainer}
@@ -104,7 +104,7 @@ echo "finish configure oracle java jdk"
 
 
 # install software
-cd ${downloadFolder}
+cd ~/Downloads/${downloadFolder}
 
 sudo dpkg -i skypeforlinux-64.deb
 sudo dpkg -i code_1.17.2-1508162334_amd64.deb
