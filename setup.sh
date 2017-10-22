@@ -85,15 +85,17 @@ echo "finish configure oracle java jdk"
 
 
 
-#######################################################################
-# INSTALL SOFTWARE                                                    #
-# VSCODE                                                              #
-# OXS ARC THEME                                                       #
-# GENYMOTION                                                          #
-# SKYPE                                                               #
-# ANDROID STUDIO                                                      #
-# INTELLJI                                                            #
-####################################################################### 
+echo ""
+echo "#######################################################################"
+echo "# INSTALL SOFTWARE                                                    #"
+echo "# VSCODE                                                              #"
+echo "# OXS ARC THEME                                                       #"
+echo "# GENYMOTION                                                          #"
+echo "# SKYPE                                                               #"
+echo "# ANDROID STUDIO                                                      #"
+echo "# INTELLJI                                                            #"
+echo "#######################################################################"
+echo ""
 androidStudioLink="https://dl.google.com/dl/android/studio/ide-zips/2.3.3.0/android-studio-ide-162.4069837-linux.zip"
 intellijIdeaLink="https://download-cf.jetbrains.com/idea/ideaIU-2017.2.5.tar.gz"
 skypeLink="https://repo.skype.com/latest/skypeforlinux-64.deb"
