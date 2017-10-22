@@ -1,9 +1,16 @@
 # UbuntuAutoScript
 Linux Auto Configuration Script- Linux 软件自动安装配置脚本
 
+`用法`
+```
+正确打开命令行：
+git clone https://github.com/SickoOrange/UbuntuAutoScript.git
+cd UbuntuAutoScript
+chmod +x setup.sh
+sudo ./ setup.sh
+```
 
-作者注
-
+`作者注`
 写这个脚本的原因是因为作者是个菜逼又苦逼，但是又手贱的蛋疼的程序猿 ` 一枚, 我有一颗强烈的好奇心，但是同时又有一双︿(￣︶￣)︿非常贱贱的双手，所以当作者在安装了无数个Linux发行版之后，再疲于每一次安装都需要重新安装软件，配置各种环境变量的生活，毅然决然的用自己的双手写下了这个这个简单的自动化配置安装软件脚本，我对Linux并不是特别的精通， 所以这个脚本非常通俗易懂，高手可以忽略，新手可以看看
 
     脚本已经在Github开源，欢迎随时
@@ -15,7 +22,7 @@ Linux Auto Configuration Script- Linux 软件自动安装配置脚本
 
 
 
-这个Bash Script都帮我们干了啥？
+`这个Bash Script都帮我们干了啥？`
 
 这里简单列举一下这个Bash Script的功能：
 
@@ -47,5 +54,7 @@ Linux Auto Configuration Script- Linux 软件自动安装配置脚本
        Android Studio
        IntellijIDEA
  ```
-   最后
-   最后，时间仓促，目前就想到这么多，以后有什么需要的工具还会继续更新，如果大家有什么想法或者意见可以给我留言， 或者直接在Github上fork.
+ `最后`
+  最后，时间仓促，目前就想到这么多，以后有什么需要的工具还会继续更新，如果大家有什么想法或者意见可以给我留言， 或者直接在Github上fork.
+  
+  ## 让我们一起享受开源的力量，一起让我们的ubuntu变得更加好用
