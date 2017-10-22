@@ -1,14 +1,11 @@
 #!/bin/bash  
 
 echo "Start to configuration"
-
-
-
 swDir="/sw"
-downloadFolderName="ubuntuSW"
+#downloadFolderName="ubuntuSW"
 
 sudo mkdir ${swDir}
-sudo mkdir ~/Downloads/${downloadFolder}
+#sudo mkdir ~/Downloads/${downloadFolder}
 
 # update system
 echo "update system"
@@ -29,7 +26,7 @@ sudo apt-get install -y vim
 #mkdir ~/ubuntuSetup
 #cd ~/ubuntuSetup/
 echo "install dash to dock plug in"
-cd ~/Downloads/${downloadFolder}
+cd ~/Downloads
 git clone https://github.com/micheleg/dash-to-dock.git
 cd dash-to-dock
 make 
@@ -72,12 +69,12 @@ sudo apt-get install typora -y
 # install oracle jdk
 echo "ready configure oracle java jdk"
 jdkContainer="jdk.tar.gz"
-cd ~/Downloads/${downloadFolder} 
-sudo wget -o ${jdkContainer} --no-check-certificate -c --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u151-b12/e758a0de34e24606bca991d704f6dcbf/jdk-8u151-linux-x64.tar.gz
+cd ~/Downloads
+sudo wget -O ${jdkContainer} --no-check-certificate -c --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u151-b12/e758a0de34e24606bca991d704f6dcbf/jdk-8u151-linux-x64.tar.gz
 tar -xvzf ${jdkContainer}
-sudo mv  ${downloadFolder} /${swDir}/${jdkContainer}
+sudo mv  ~/Downloads/jdk1.8.0_151 ${swDir}/jdk
 
-sudo echo "export JAVA_HOME=${swDir}/${jdkContainer}" >> /etc/profile
+sudo echo "export JAVA_HOME=${swDir}/jdk" >> /etc/profile
 sudo echo "export JRE_HOME=\${JAVA_HOME}/jre" >> /etc/profile
 sudo echo "export CLASSPATH=.:\${JAVA_HOME}/lib:\${JRE_HOME}/lib" >> /etc/profile
 sudo echo "export PATH=\${JAVA_HOME}/bin:\$PATH" >> /etc/profile
@@ -104,23 +101,23 @@ osxArcCollectionThemeLink="https://github-production-release-asset-2e65be.s3.ama
 googleChromeLink="https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
 
 # install software
-cd ~/Downloads/${downloadFolder}
+cd ~/Downloads/
 
 skypeName="skype.de"
-sudo wget -O ${sktpe.deb} ${skypeLink}
+sudo wget -O ${sktpe.deb} -c ${skypeLink}
 sudo dpkg -i ${skypeName}
 
 
 vscodeName="vsCode.deb"
-sudo wget -O ${vscodeName} ${vsCodeLink}
+sudo wget -O ${vscodeName} -c ${vsCodeLink}
 sudo dpkg -i ${vscodeName}
 
 virtualBoxName="virtualBox.deb"
-sudo wget -O ${virtualBoxName} ${virtualBoxLink}
+sudo wget -O ${virtualBoxName} -c ${virtualBoxLink}
 sudo dpkg -i ${virtualBoxName}
 
 chromeName="chrome.deb"
-sudo wget -O ${chromeName} ${googleChromeLink}
+sudo wget -O ${chromeName} -c ${googleChromeLink}
 sudo dpkg -i ${chromeName}
 
 osxArcName="osxArc.deb"
@@ -135,14 +132,14 @@ chmod +x ${genymotionName}
 sudo ${genymotionName}
 
 #install android studio
-cd ~/Downloads
-sudo wget -c https://dl.google.com/dl/android/studio/ide-zips/2.3.3.0/android-studio-ide-162.4069837-linux.zip
+sudo wget -c ${androidStudioLink}
 tar -xvzf android-studio-ide-162.4069837-linux.zip
 sudo mv android-studio/ /SW/android-studio
 cd /SW/android-studio/bin
 ./studio.sh 
 
 #install intellij
+sudo wget -c ${intellijIdeaLink}
 tar -xvzf ideaIU-2017.2.5.tar.gz
 sudo mv idea-IU-172.4343.14 /SW/idea-IU-172.4343.14
 cd /SW//SW/idea-IU-172.4343.14/bin
