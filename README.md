@@ -81,6 +81,4 @@ sudo ./ setup.sh
 > http://i.imgur.com/nZLDzzk.jpg
 
 > Github地址:  
-> https://github.com/SickoOrange/UbuntuAuto
-
-Script
+> https://github.com/SickoOrange/UbuntuAutoScript
