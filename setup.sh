@@ -34,8 +34,9 @@ sudo apt-get install unzip -y
 
 #install gnome desktop
 echo "install gnome shell and tweak tool"
-sudo apt-get install gnome-shell -y
+sudo apt-get install gnome-session -y
 sudo apt-get install gnome-tweak-tool -y
+sudo apt-get install gnome-shell-extensions
 
 # install gnome arc theme
 echo "install gnome arc theme"
@@ -170,5 +171,12 @@ echo "#                          FINISH!!!!!!!!!                            #"
 echo "#######################################################################"
 echo ""
 
+
+
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+sudo apt-get install xclip
+xclip -sel clip < ~/.ssh/id_rsa.pub
 
 
