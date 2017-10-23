@@ -70,7 +70,7 @@ echo "install markdown editor Typora"
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA300B7755AFCFAE -y
 sudo add-apt-repository 'deb http://typora.io linux/' -y
 sudo apt-get update -y
-sudo apt-get install typora -y
+sudo apt-get install typora
 
 
 
