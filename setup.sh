@@ -31,6 +31,8 @@ echo "install vim"
 sudo apt-get install -y vim
 echo "install unzip"
 sudo apt-get install unzip -y
+echo "install kolour paint"
+sudo apt-get install  kolourpaint4 -y 
 
 #install gnome desktop
 echo "install gnome shell and tweak tool"
