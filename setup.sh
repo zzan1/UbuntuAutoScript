@@ -103,6 +103,8 @@ echo "# ANDROID STUDIO                                                      #"
 echo "# INTELLJI                                                            #"
 echo "#######################################################################"
 echo ""
+
+
 androidStudioLink="https://dl.google.com/dl/android/studio/ide-zips/2.3.3.0/android-studio-ide-162.4069837-linux.zip"
 intellijIdeaLink="https://download-cf.jetbrains.com/idea/ideaIU-2017.2.5.tar.gz"
 skypeLink="https://repo.skype.com/latest/skypeforlinux-64.deb"
@@ -111,12 +113,17 @@ virtualBoxLink="http://download.virtualbox.org/virtualbox/5.2.0/virtualbox-5.2_5
 #osxArcCollectionThemeLink="https://github-production-release-asset-2e65be.s3.amazonaws.com/77880841/16a14c7c-45a6-11e7-81ac-28673f670d57?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20171022%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20171022T093955Z&X-Amz-Expires=300&X-Amz-Signature=98b29dcd8849047f0e774fa1dd00353c8d8c60e4927c6273aa9afba5f5e3d14b&X-Amz-SignedHeaders=host&actor_id=22359905&response-content-disposition=attachment%3B%20filename%3Dosx-arc-collection_1.4.3_amd64.deb"
 googleChromeLink="https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
 sougouLink="http://cdn2.ime.sogou.com/dl/index/1491565850/sogoupinyin_2.1.0.0086_amd64.deb?st=bBYOyY4OxnTa-_ElgJuKDw&e=1508784697&fn=sogoupinyin_2.1.0.0086_amd64.deb"
+netMusicLink="http://s1.music.126.net/download/pc/netease-cloud-music_1.0.0-2_amd64_ubuntu16.04.deb"
 
 
 
 # install software
 cd ~/Downloads/
 
+
+
+
+# install sougou input 
 sougouName="sougou.deb"
 sudo wget -O ${sougouName} -c ${sougouLink}
 sudo dpkg -i ${sougouName}
@@ -137,6 +144,10 @@ sudo dpkg -i ${virtualBoxName}
 chromeName="chrome.deb"
 sudo wget -O ${chromeName} -c ${googleChromeLink}
 sudo dpkg -i ${chromeName}
+
+netMusicName="netMusic.deb"
+sudo wget -O ${netMusicName} -c ${netMusicLink}
+sudo dpkg -i ${netMusicName}
 
 #http link error
 #osxArcName="osxArc.deb"
@@ -165,6 +176,8 @@ mv idea-IU-172.4343.14 ${swDir}/idea-IU-172.4343.14
 cd ${swDir}/idea-IU-172.4343.14/bin
 ./idea.sh 
 
+
+
 echo ""
 echo "#######################################################################"
 echo "#                          FINISH!!!!!!!!!                            #"
@@ -173,10 +186,21 @@ echo ""
 
 
 
-ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_rsa
-sudo apt-get install xclip
-xclip -sel clip < ~/.ssh/id_rsa.pub
+
+# configure github ssh public key
+#ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+#eval "$(ssh-agent -s)"
+#ssh-add ~/.ssh/id_rsa
+#sudo apt-get install xclip
+#xclip -sel clip < ~/.ssh/id_rsa.pub
+#eval "$(ssh-agent -s)"
+#ssh-add
 
 
+# install linux weixin
+#git clone https://github.com/geeeeeeeeek/electronic-wechat.git
+# Go into the repository
+#cd electronic-wechat
+# Install dependencies and run the app
+#npm install && npm start
+#npm run build:linux
