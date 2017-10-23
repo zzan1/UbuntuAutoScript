@@ -147,7 +147,7 @@ sudo ./${genymotionName}
 sudo wget -c ${androidStudioLink}
 unzip android-studio-ide-162.4069837-linux.zip -d ~/Downloads
 mv ~/Downloads/android-studio ${swDir}/android_studio-test
-cd #{swDir}/android_studio-test/bin
+cd ${swDir}/android_studio-test/bin
 chmod +x studio.sh
 ./studio.sh 
 
