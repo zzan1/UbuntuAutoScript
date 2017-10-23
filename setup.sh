@@ -93,14 +93,7 @@ echo "finish configure oracle java jdk"
 
 echo ""
 echo "#######################################################################"
-echo "# INSTALL SOFTWARE   
-echo "# sougou                                                              #"
-echo "# VSCODE                                                              #"
-echo "# OXS ARC THEME                                                       #"
-echo "# GENYMOTION                                                          #"
-echo "# SKYPE                                                               #"
-echo "# ANDROID STUDIO                                                      #"
-echo "# INTELLJI                                                            #"
+echo "#                        INSTALL SOFTWARE                             #"
 echo "#######################################################################"
 echo ""
 
