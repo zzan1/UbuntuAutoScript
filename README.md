@@ -77,6 +77,11 @@ sudo ./ setup.sh
 > ps: 搜狗输入法已经安装完毕，但是脚本只是帮你安装到系统了，你需要自己把搜狗输入法添加到fcitx中，如下图
 ![Screenshot from 2017-10-23 21-56-55.png](http://upload-images.jianshu.io/upload_images/3127217-3430d3da55a7fdfb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+> 25.10.2017 更新
+> 添加了 linux 命令行 Json解析工具 jd
+> 添加了 画图板 kolour paint
+
+
 > 背景图片地址
 > http://i.imgur.com/nZLDzzk.jpg
 
