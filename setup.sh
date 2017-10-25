@@ -35,6 +35,8 @@ echo "install jd-json parse tool in linux"
 sudo apt-get install jd -y
 echo "install kolour paint"
 sudo apt-get install  kolourpaint4 -y 
+echo "install unrar"
+sudo apt-get install unrar -y
 
 # fixed time zone problem
 sudo timedatectl set-local-rtc true
@@ -180,11 +182,6 @@ cd ${swDir}/idea-IU-172.4343.14/bin
 
 
 
-echo ""
-echo "#######################################################################"
-echo "#                          FINISH!!!!!!!!!                            #"
-echo "#######################################################################"
-echo ""
 
 
 while getopts "g: b: c:" arg #选项后面的冒号表示该选项需要参数
@@ -218,6 +215,11 @@ done
 
 
 
+echo ""
+echo "#######################################################################"
+echo "#                          FINISH!!!!!!!!!                            #"
+echo "#######################################################################"
+echo ""
 
 
 
