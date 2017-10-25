@@ -30,6 +30,9 @@ sudo ./ setup.sh
 简直苦不堪言，时间就是金钱，但是手贱喜欢换系统怎么办，
 最后实在受不了了，自己写了一个自动化配置安装软件脚本
 
+
+
+
     脚本已经在Github开源，欢迎随时
     Start
     Fork
@@ -81,17 +84,20 @@ sudo ./ setup.sh
 
 #### 最后，时间仓促，目前就想到这么多，以后有什么需要的工具还会继续更新，如果大家有什么想法或者意见可以给我留言， 或者直接在Github上fork.
 
+```
+ 23.10.2017 更新
+ 添加了网易云音乐，搜狗输入法
+ ps: 搜狗输入法已经安装完毕，但是脚本只是帮你安装到系统了，你需要自己把搜狗输入法添加到fcitx中，如下图
+```
+> ![Screenshot from 2017-10-23 21-56-55.png](http://upload-images.jianshu.io/upload_images/3127217-3430d3da55a7fdfb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-> 23.10.2017 更新
-> 添加了网易云音乐，搜狗输入法
-> ps: 搜狗输入法已经安装完毕，但是脚本只是帮你安装到系统了，你需要自己把搜狗输入法添加到fcitx中，如下图
-![Screenshot from 2017-10-23 21-56-55.png](http://upload-images.jianshu.io/upload_images/3127217-3430d3da55a7fdfb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-> 25.10.2017 更新
-> 添加了 linux 命令行 Json解析工具 jd
-> 添加了 画图板 kolour paint
-> fixed time zone problem
-
+```
+25.10.2017 更新
+添加了 linux 命令行 Json解析工具 jd
+添加了 画图板 kolour paint
+修复了window与ubuntu双系统，时间不同步的错误
+增加了自动配置github ssh
+```
 
 > 背景图片地址
 > http://i.imgur.com/nZLDzzk.jpg
