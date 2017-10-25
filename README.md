@@ -22,7 +22,10 @@ chmod +x setup.sh
 sudo ./ setup.sh
 ```
 > 如果你想自动配置你的github ssh 秘钥，只需要在命令上述命令后面追加 -g xxxxxxx@gmail.com即可，生成的秘钥会自动保存在桌面的github_ssh_key.txt文件中。
-> sudo ./setup.sh -g xxxxxxx@gmail.com
+
+```
+sudo ./setup.sh -g xxxxxxx@gmail.com
+```
 
 
 
@@ -77,17 +80,20 @@ sudo ./ setup.sh
    `最后`
    最后，时间仓促，目前就想到这么多，以后有什么需要的工具还会继续更新，如果大家有什么想法或者意见可以给我留言， 或者直接在Github上fork.
 
+```
+ 23.10.2017 更新
+ 添加了网易云音乐，搜狗输入法
+ ps: 搜狗输入法已经安装完毕，但是脚本只是帮你安装到系统了，你需要自己把搜狗输入法添加到fcitx中，如下图
+```
+> ![Screenshot from 2017-10-23 21-56-55.png](http://upload-images.jianshu.io/upload_images/3127217-3430d3da55a7fdfb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-> 23.10.2017 更新
-> 添加了网易云音乐，搜狗输入法
-> ps: 搜狗输入法已经安装完毕，但是脚本只是帮你安装到系统了，你需要自己把搜狗输入法添加到fcitx中，如下图
-![Screenshot from 2017-10-23 21-56-55.png](http://upload-images.jianshu.io/upload_images/3127217-3430d3da55a7fdfb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-> 25.10.2017 更新
-> 添加了 linux 命令行 Json解析工具 jd
-> 添加了 画图板 kolour paint
-> fixed time zone problem
-
+```
+25.10.2017 更新
+添加了 linux 命令行 Json解析工具 jd
+添加了 画图板 kolour paint
+修复了window与ubuntu双系统，时间不同步的错误
+增加了自动配置github ssh
+```
 
 > 背景图片地址
 > http://i.imgur.com/nZLDzzk.jpg
