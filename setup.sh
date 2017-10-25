@@ -31,6 +31,8 @@ echo "install vim"
 sudo apt-get install -y vim
 echo "install unzip"
 sudo apt-get install unzip -y
+echo "install jd-json parse tool in linux"
+sudo apt-get install jd -y
 
 #install gnome desktop
 echo "install gnome shell and tweak tool"
