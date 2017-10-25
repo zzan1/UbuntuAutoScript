@@ -80,6 +80,7 @@ sudo ./ setup.sh
 > 25.10.2017 更新
 > 添加了 linux 命令行 Json解析工具 jd
 > 添加了 画图板 kolour paint
+> fixed time zone problem
 
 
 > 背景图片地址

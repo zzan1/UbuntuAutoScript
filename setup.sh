@@ -36,6 +36,10 @@ sudo apt-get install jd -y
 echo "install kolour paint"
 sudo apt-get install  kolourpaint4 -y 
 
+# fixed time zone problem
+sudo timedatectl set-local-rtc true
+sudo timedatectl set-ntp true
+
 
 #install gnome desktop
 echo "install gnome shell and tweak tool"
