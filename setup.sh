@@ -184,21 +184,17 @@ echo ""
 
 
 
-<<<<<<< HEAD
-=======
+
 
 # configure github ssh public key
->>>>>>> 2ec5e3386a8ea2750604e44d11f49b862cfe3c1a
 #ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 #eval "$(ssh-agent -s)"
 #ssh-add ~/.ssh/id_rsa
 #sudo apt-get install xclip
 #xclip -sel clip < ~/.ssh/id_rsa.pub
-<<<<<<< HEAD
-=======
+
 #eval "$(ssh-agent -s)"
 #ssh-add
->>>>>>> 2ec5e3386a8ea2750604e44d11f49b862cfe3c1a
 
 
 # install linux weixin
