@@ -100,6 +100,12 @@ sudo ./ setup.sh
 添加解压rar工具
 ```
 
+```
+26.10.2017 更新日志
+* 添加了SDKMAN！是一个用于管理多个软件开发套件的并行版本的工具
+* 自动安装Gradle版本构建工具
+```
+
 > 背景图片地址
 > http://i.imgur.com/nZLDzzk.jpg
 

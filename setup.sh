@@ -37,6 +37,12 @@ echo "install kolour paint"
 sudo apt-get install  kolourpaint4 -y 
 echo "install unrar"
 sudo apt-get install unrar -y
+echo "install sdk man"
+sudo curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk version
+echo "install gradle 4.2.1"
+sdk install gradle 4.2.1
 
 # fixed time zone problem
 sudo timedatectl set-local-rtc true
