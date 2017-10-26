@@ -57,9 +57,9 @@ sudo ./ setup.sh
        打开Terminal
        输入 java -version 验证是否正确安装
 5. 自动安装Gradle 版本构建工具
-6. 自动安装sdkman 
-5. 自动安装Typora Linux版本的Markdown写作神器 
-6. 安装常用小工具：
+6. 自动安装sdkman 用于管理多个软件开发套件的并行版本的工具
+7. 自动安装Typora Linux版本的Markdown写作神器 
+8. 安装常用小工具：
 ```
        Git           -- 版本控制软件
        Curl         -- 调试网络连接的小工具
@@ -69,8 +69,8 @@ sudo ./ setup.sh
        unrar        -- 解压rar
        jd           -- 命令行解析json工具
        kolourpaint4 --画图工具 
- ```
-7. 自动下载安装常用的软件：
+```
+9. 自动下载安装常用的软件：
 ```
        Visual Studio Code
        Genymotion
