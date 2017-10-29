@@ -105,6 +105,12 @@ sudo ./ setup.sh
 2. 自动安装Gradle版本构建工具
 ```
 
+```
+29.10.2017 更新日志
+1.自动安装 maven
+```
+
+
 > 背景图片地址
 > http://i.imgur.com/nZLDzzk.jpg
 

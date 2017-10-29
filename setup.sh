@@ -43,6 +43,10 @@ source "$HOME/.sdkman/bin/sdkman-init.sh"
 sdk version
 echo "install gradle 4.2.1"
 sdk install gradle 4.2.1
+gradle -version
+echo "install maven"
+sudo apt-get install maven -y
+mvn -version
 
 # fixed time zone problem
 sudo timedatectl set-local-rtc true
