@@ -108,6 +108,10 @@ sudo ./ setup.sh
 ```
 29.10.2017 更新日志
 1.自动安装 maven
+2.自动安装 docker
+    2.1 mysql image
+    2.2 tomcat image
+    2.3 nginx image
 ```
 
 

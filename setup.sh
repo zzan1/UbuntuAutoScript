@@ -47,6 +47,11 @@ gradle -version
 echo "install maven"
 sudo apt-get install maven -y
 mvn -version
+echo "install docker.io"
+sudo apt-get install -y docker.io
+sudo docker pull  nginx
+sudo docker pull tomcat
+sudo docker pull mysql
 
 # fixed time zone problem
 sudo timedatectl set-local-rtc true
