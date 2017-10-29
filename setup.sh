@@ -49,6 +49,36 @@ sudo timedatectl set-local-rtc true
 sudo timedatectl set-ntp true
 
 
+# generate github ssh public key
+while getopts "g: b: c:" arg #选项后面的冒号表示该选项需要参数
+do
+        case $arg in
+             g)
+                echo "a's arg:$OPTARG" #参数存在$OPTARG中
+                # configure github ssh public key
+                ssh-keygen -t rsa -b 4096 -C "$OPTARG"
+                eval "$(ssh-agent -s)"
+                ssh-add ~/.ssh/id_rsa
+                sudo apt-get install xclip
+                xclip -sel clip < ~/.ssh/id_rsa.pub
+                cat ~/.ssh/id_rsa > ~/desktop/github_ssh_key.txt
+                eval "$(ssh-agent -s)"
+                ssh-add
+                ;;
+             b)
+                echo "b's arg:$OPTARG"
+                ;;
+             c)
+                echo "c"
+                ;;
+             ?) #当有不认识的选项的时候arg为?
+            echo "unkonw argument"
+        exit 1
+        ;;
+        esac
+done
+
+
 #install gnome desktop
 echo "install gnome shell and tweak tool"
 sudo apt-get install gnome-session -y
@@ -129,10 +159,6 @@ netMusicLink="http://s1.music.126.net/download/pc/netease-cloud-music_1.0.0-2_am
 
 # install software
 cd ~/Downloads/
-
-
-
-
 # install sougou input 
 sougouName="sougou.deb"
 sudo wget -O ${sougouName} -c ${sougouLink}
@@ -185,41 +211,6 @@ tar -xvzf ideaIU-2017.2.5.tar.gz
 mv idea-IU-172.4343.14 ${swDir}/idea-IU-172.4343.14
 cd ${swDir}/idea-IU-172.4343.14/bin
 ./idea.sh 
-
-
-
-
-
-while getopts "g: b: c:" arg #选项后面的冒号表示该选项需要参数
-do
-        case $arg in
-             g)
-                echo "a's arg:$OPTARG" #参数存在$OPTARG中
-                # configure github ssh public key
-                ssh-keygen -t rsa -b 4096 -C "$OPTARG"
-                eval "$(ssh-agent -s)"
-                ssh-add ~/.ssh/id_rsa
-                sudo apt-get install xclip
-                xclip -sel clip < ~/.ssh/id_rsa.pub
-                cat ~/.ssh/id_rsa > ~/desktop/github_ssh_key.txt
-                eval "$(ssh-agent -s)"
-                ssh-add
-                ;;
-             b)
-                echo "b's arg:$OPTARG"
-                ;;
-             c)
-                echo "c"
-                ;;
-             ?) #当有不认识的选项的时候arg为?
-            echo "unkonw argument"
-        exit 1
-        ;;
-        esac
-done
-
-
-
 
 echo ""
 echo "#######################################################################"
