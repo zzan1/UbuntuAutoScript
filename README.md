@@ -114,6 +114,11 @@ sudo ./ setup.sh
     2.3 nginx image
 ```
 
+```
+30.10.2017 更新日志
+1.自动安装 sqliteman linux下一款轻量级数据库图形化软件
+```
+
 
 > 背景图片地址
 > http://i.imgur.com/nZLDzzk.jpg

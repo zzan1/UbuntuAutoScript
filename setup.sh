@@ -47,6 +47,8 @@ gradle -version
 echo "install maven"
 sudo apt-get install maven -y
 mvn -version
+echo "install sqlite man"
+sudo apt-get install sqliteman
 echo "install docker.io"
 sudo apt-get install -y docker.io
 sudo docker pull  nginx
