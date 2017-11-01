@@ -41,19 +41,21 @@ echo "install sdk man"
 sudo curl -s "https://get.sdkman.io" | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
 sdk version
-echo "install gradle 4.2.1"
+echo "install gradle 4.2.1"            0
 sdk install gradle 4.2.1
 gradle -version
 echo "install maven"
 sudo apt-get install maven -y
 mvn -version
 echo "install sqlite man"
-sudo apt-get install sqliteman
+sudo apt-get install sqlitemanm -y
 echo "install docker.io"
 sudo apt-get install -y docker.io
 sudo docker pull  nginx
 sudo docker pull tomcat
 sudo docker pull mysql
+echo "install clementine"
+sudo apt-get install clementine -y
 
 # fixed time zone problem
 sudo timedatectl set-local-rtc true

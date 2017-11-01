@@ -117,6 +117,7 @@ sudo ./ setup.sh
 ```
 30.10.2017 更新日志
 1.自动安装 sqliteman linux下一款轻量级数据库图形化软件
+2. clementine linux下一款受欢迎的开源音乐播放软件
 ```
 
 
