@@ -63,10 +63,3 @@ git clone https://github.com/micheleg/dash-to-dock.git
 cd dash-to-dock
 make 
 make install
-
-#install markdown editor tepora
-echo "install markdown editor Typora"
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA300B7755AFCFAE -y
-sudo add-apt-repository 'deb http://typora.io linux/' -y
-sudo apt-get update -y
-sudo apt-get install typora
